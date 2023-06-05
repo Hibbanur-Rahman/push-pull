@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <audio id="awesomeSound">
+        <source src="awesome.mp3" type="audio/mpeg">
+    </audio>
+      <audio id="yuckySound">
+        <source src="yucky.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="starting" id="starting">
+            <h2>Quiz</h2>
+            <h3>push and pull</h3>
+            <div class="start" id="start">
+                <i class="fa-solid fa-play"></i>
+                <p>START</p>
+            </div>
+            <p>A series of multiple choice questions.Tap the correct answer to proceed</p>
+        </div>
+        <div class="game hide" id="game">
+            <div class="upper-part">
+                <div class="timer" id="timer">0:00</div>
+                <div class="score" id="score">&#10003; 0</div>
+            </div>
+            <p>is this push Or pull,Or none</p>
+            <div style="display:flex;width:100%">
+                <div class="image" id="image"> </div>
+                <div class="options">
+                    <div class="row">
+                        <div class="option-list">
+                            <p>A</p>
+                            <h3>Pull</h3>
+                        </div>
+                        <div class="option-list">
+                            <p>B</p>
+                            <h3>Push</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option-list">
+                            <p>C</p>
+                            <h3 style="margin-top: -1px;">Pull and Push</h3>
+                        </div>
+                        <div class="option-list">
+                            <p>D</p>
+                            <h3>none</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggelbar hide" id="toggelbar">
+                <div class="submitAnswer"><h3>Submit answers</h3></div>
+                <div class="startAgain"><h3>Start again</h3></div>
+                <div class="resume"><h3>Resume</h3></div>
+            </div>
+            <div class="bottom">
+
+                <div class="navbar" id="navbar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button>next</button>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
