@@ -6,6 +6,10 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+.container{
+    height: 100vh;
 }
 .starting{
     width: 100%;
@@ -17,6 +21,7 @@ body{
     text-align: center;
     color: white;
     padding-top: 180px;
+    overflow: hidden;
 }
 .starting h2{
     font-size: 20px;
@@ -61,11 +66,14 @@ body{
     display: none;
 }
 .game{
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 .game p{
     font-size: 70px;
@@ -151,6 +159,9 @@ width: 90%;
 }
 .bottom{
     display: flex;
+    display: flex;
+    width: 94%;
+    margin: auto;
 }
 .navbar{
     border:2px solid black;
@@ -185,6 +196,7 @@ width: 90%;
     padding-top: 5px;
     position: absolute;
     margin-top: -150px;
+    margin-left: 2.8rem;
 }
 .toggelbar div{
     width: 90%;
@@ -193,8 +205,91 @@ width: 90%;
     border-radius: 7px;
     cursor: pointer;
     margin-top: 20px;
+    padding-left: 3px;
+    box-sizing: border-box;
 }
 .toggelbar div:hover{
     background-color: rgb(156, 155, 155);
     color: black;
+    padding-left:10px;
+    transition: all 0.4s ease-in-out;
+}
+.toggelbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+.toggelbar a:hover{
+    color: black;
+}
+.show-submit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.show-container{
+    width:14rem;
+    background-color: black;
+    color: white;
+    height: auto;
+    font-size: 1.8rem;
+    opacity: 0.7;
+    padding: 1rem;
+}
+.show-container p:nth-child(1){
+    font-size: 1.2rem;
+    color: grey;
+}
+.line{
+    width: 100%;
+    height: 0.1rem;
+    background-color: grey;
+}
+.time-score{
+    display: flex;
+}
+.time-score div{
+    width: 50%;
+    
+}
+.show-container a{
+    color:white;
+    text-decoration: none;
+}
+.answers-item{
+    border:1px solid grey;
+    border-radius:5px;
+    display: flex;
+    height: 140px;
+    width: 85%;
+    margin:auto;
+    padding-top: 10px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.answers-item div{
+    margin-left: 74px;
+}
+.answers-item img{
+    width: 200px;
+    height: 120px;
+}
+.answer{
+    width:120px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 5px solid rgb(244, 108, 108);
+    background-color: rgb(242, 73, 73);
+    border-radius: 5px;
+}
+
+.sno{
+    font-size: 90px;
+    color: grey;
+    padding-top: 10px;
+}
+.answer-item-p{
+    font-size: 30px;
+    margin-top: 45px;
 }
